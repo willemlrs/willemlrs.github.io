@@ -8,14 +8,14 @@ Replace `assets/Willem_Larras_CV.pdf` and push.
 
 ## Add a photo
 Put `assets/portrait.jpg` (square) in place and uncomment the `<img class="portrait">`
-line at the top of the hero in `index.html`.
+line at the top of `.intro` in `index.html`.
 
 ## Publish a note (Writing)
+The Writing section is removed from the home page until there is a first note.
 1. Copy `writing/_template.md` to `writing/<slug>.md` and write in Markdown.
    GitHub Pages renders it with `_layouts/note.html` at `/writing/<slug>.html`.
-2. Add a line to the `<ol class="notes">` list in `index.html` (newest first):
-   `<li><a href="writing/<slug>.html">Title</a> <time datetime="2026-12-01">Dec 2026</time></li>`
-   The "Notes coming soon" line hides itself once the list is not empty.
+2. Add a "Writing" section in `index.html` (a `.rows` list like Projects) and a
+   matching entry in the `.toc` nav.
 
 ## Preview locally
 `python3 -m http.server 8000` then open http://localhost:8000

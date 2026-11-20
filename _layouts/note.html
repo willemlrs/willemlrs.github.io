@@ -9,18 +9,19 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <header class="hero note-head">
-    <p class="meta"><a href="/#writing">← Willem Larras</a></p>
-    <h1>{{ page.title }}</h1>
-    <p class="meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %-d, %Y' }}</time></p>
-  </header>
-  <main class="note">
-    {{ content }}
-  </main>
-  <footer class="foot"><p>© {{ 'now' | date: '%Y' }} Willem Larras</p></footer>
+  <div class="note-page">
+    <header>
+      <a class="back" href="/">← Willem Larras</a>
+      <h1>{{ page.title }}</h1>
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %-d, %Y' }}</time>
+    </header>
+    <main class="note">
+      {{ content }}
+    </main>
+  </div>
 </body>
 </html>
