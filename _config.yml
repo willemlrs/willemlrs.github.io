@@ -1,0 +1,6 @@
+# GitHub Pages runs Jekyll on push: index.html is served as-is,
+# Markdown notes in writing/ are rendered with _layouts/note.html.
+title: Willem Larras
+markdown: kramdown
+exclude:
+  - README.md

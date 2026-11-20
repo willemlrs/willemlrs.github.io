@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Willem Larras</title>
+  <meta name="description" content="Willem Larras — technical founder building with AI agents, moving into empirical AI safety research. San Francisco.">
+  <meta name="author" content="Willem Larras">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FAF8F3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://willemlrs.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Willem Larras">
+  <meta property="og:title" content="Willem Larras">
+  <meta property="og:description" content="Technical founder building with AI agents, moving into empirical AI safety research.">
+  <meta property="og:url" content="https://willemlrs.github.io/">
+  <meta property="og:image" content="https://willemlrs.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Willem Larras — Technical founder · AI agents · moving into AI safety research">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Willem Larras">
+  <meta name="twitter:description" content="Technical founder building with AI agents, moving into empirical AI safety research.">
+  <meta name="twitter:image" content="https://willemlrs.github.io/assets/og.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap"></noscript>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero" id="top">
+    <!-- Photo slot: add <img class="portrait" src="assets/portrait.jpg" alt="Willem Larras" width="112" height="112"> here. -->
+    <h1>Willem Larras</h1>
+    <p class="tagline">Technical founder · AI agents · moving into AI&nbsp;safety research</p>
+    <p class="place">San Francisco</p>
+    <ul class="links" aria-label="Contact and profiles">
+      <li><a href="mailto:willem_lrs@berkeley.edu">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/willem-lrs/" rel="me">LinkedIn</a></li>
+      <li><a href="https://github.com/willemlrs" rel="me">GitHub</a></li>
+      <li><a href="assets/Willem_Larras_CV.pdf">CV <span class="fmt">(PDF)</span></a></li>
+    </ul>
+  </header>
+
+  <main id="main">
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h"><span class="num" aria-hidden="true">01</span>About</h2>
+      <p>I build production systems with AI coding agents and hold them to a strict verification bar. I’ve seen agents misreport their own work in production, which is why I run independent reviewer agents and review every merge myself. Engineering background (UC Berkeley MEng, Arts et Métiers ParisTech) with ML and robotics coursework. I want to work full-time on making AI systems reliable and honest.</p>
+    </section>
+
+    <section id="work" aria-labelledby="work-h">
+      <h2 id="work-h"><span class="num" aria-hidden="true">02</span>Work</h2>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Co-founder &amp; CEO <span class="at">@ <a href="https://joinequitx.com">EquitX</a></span></h3>
+          <p class="meta"><time datetime="2025-11">Nov 2025</time> – present · Berkeley</p>
+        </header>
+        <p class="lede">Demand and pricing layer for ticketing: fans state a budget and a uniform-price batch mechanism clears the market.</p>
+        <ul class="points">
+          <li>Lead developer of the production stack (Next.js, FastAPI, AWS, Stripe, Terraform), built with parallel Claude Code agents. Added an independent reviewer agent after implementers misreported their own work; I review every merge.</li>
+          <li>Found that the OR-Tools CP-SAT clearing solver silently reported “optimal” on timeout (9 vs 53 units cleared); fixed it with an explicit partial-timeout status and an O(N&nbsp;log&nbsp;N) fast path.</li>
+          <li>Led a counterfactual pricing study on 350,549 FIFA World Cup 2026 resale transactions (+29.9% modeled organizer revenue on matched markets), published with explicit scope limits (7 of 416 markets). <a href="https://joinequitx.com/research">Read the study</a>.</li>
+          <li>Shipped an Eventbrite waitlist and lottery integration, used since Oct 2026 by an organizer running 20–30 events per week.</li>
+        </ul>
+        <ul class="tags" aria-label="Stack">
+          <li>Next.js</li><li>FastAPI</li><li>AWS</li><li>Stripe</li><li>Terraform</li><li>OR-Tools CP-SAT</li><li>Claude Code</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Co-founder <span class="at">@ geste</span></h3>
+          <p class="meta"><time datetime="2026-10">Oct 2026</time> – present · Berkeley</p>
+        </header>
+        <p class="lede">Measures how much each human-video or teleoperation clip improves a robot policy, so labs train on less, better data.</p>
+        <ul class="points">
+          <li>1st place (Most Creative track), B@BHacks 2.0.</li>
+          <li>I lead customer discovery and go-to-market with robotics labs, with a hypothesis register and pre-set decision rules (Wilson intervals, Fisher’s exact test, no conclusions under 20 contacts per group).</li>
+          <li>Team proof of concept (experiments run by my co-founder): influence-based clip selection raised policy success from 17.5% to 29.0% (+11.5&nbsp;pts, 95% CI [+6.8, +16.2], 4&nbsp;seeds).</li>
+        </ul>
+        <ul class="tags" aria-label="Methods">
+          <li>Customer discovery</li><li>Go-to-market</li><li>Wilson intervals</li><li>Fisher’s exact test</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Business Data Analyst <span class="at">@ Sopra Financing Software</span></h3>
+          <p class="meta"><time datetime="2025-06">Jun 2025</time> – <time datetime="2026-03">Mar 2026</time></p>
+        </header>
+        <p class="lede">Validated World Bank Group financing data with SQL.</p>
+        <ul class="tags" aria-label="Stack"><li>SQL</li></ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Founder <span class="at">@ <a href="https://wsevent.fr">WS Event</a></span></h3>
+          <p class="meta"><time datetime="2022">2022</time> – present</p>
+        </header>
+        <p class="lede">Built wsevent.fr; revenue funded over half of my Berkeley master’s.</p>
+      </article>
+    </section>
+
+    <section id="research" aria-labelledby="research-h">
+      <h2 id="research-h"><span class="num" aria-hidden="true">03</span>Research &amp; Projects</h2>
+
+      <article class="card">
+        <header class="card-head">
+          <h3><a href="https://joinequitx.com/research">FIFA World Cup 2026 pricing study</a></h3>
+          <p class="meta"><time datetime="2026">2026</time> · EquitX</p>
+        </header>
+        <p class="lede">Counterfactual pricing study on 350,549 resale transactions, published with explicit scope limits.</p>
+        <ul class="tags" aria-label="Topics"><li>Counterfactual pricing</li></ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>MEng Capstone</h3>
+          <p class="meta"><time datetime="2024">2024</time>–<time datetime="2025">25</time> · UC Berkeley</p>
+        </header>
+        <p class="lede">TensorFlow surrogate replacing CFD simulations of the RAE2822 transonic airfoil.</p>
+        <ul class="tags" aria-label="Stack"><li>TensorFlow</li><li>CFD</li></ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h3>Demand Curve Engine</h3>
+          <p class="meta"><time datetime="2026">2026</time> · Berkeley × DeepMind Hackathon</p>
+        </header>
+        <p class="lede">Gemini with search extracts sourced facts; a deterministic model computes the curve; no unsourced model number is ever shown.</p>
+        <ul class="tags" aria-label="Stack"><li>Gemini</li><li>Sourced facts</li></ul>
+      </article>
+    </section>
+
+    <section id="writing" aria-labelledby="writing-h">
+      <h2 id="writing-h"><span class="num" aria-hidden="true">04</span>Writing</h2>
+      <!-- Notes: add one <li> per published note, newest first, e.g.
+           <li><a href="writing/my-note.html">Title</a> <time datetime="2026-12-01">Dec 2026</time></li>
+           See README.md for how to write a note in Markdown. -->
+      <ol class="notes" reversed></ol>
+      <p class="empty">Notes coming soon.</p>
+    </section>
+
+    <section id="education" aria-labelledby="education-h">
+      <h2 id="education-h"><span class="num" aria-hidden="true">05</span>Education</h2>
+      <dl class="rows">
+        <div>
+          <dt>UC Berkeley</dt>
+          <dd>MEng, Mechanical Engineering</dd>
+          <dd class="meta"><time datetime="2024">2024</time>–<time datetime="2025">2025</time></dd>
+        </div>
+        <div>
+          <dt>Arts et Métiers ParisTech</dt>
+          <dd>Diplôme d’Ingénieur (M.Sc.), Mechanical &amp; Industrial Engineering</dd>
+          <dd class="meta"><time datetime="2022">2022</time>–<time datetime="2025">2025</time></dd>
+        </div>
+        <div>
+          <dt>Université Paris Dauphine – PSL</dt>
+          <dd>Final year of B.Sc. in Applied Economics</dd>
+          <dd class="meta"><time datetime="2023">2023</time>–<time datetime="2024">2024</time></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="recognition" aria-labelledby="recognition-h">
+      <h2 id="recognition-h"><span class="num" aria-hidden="true">06</span>Recognition</h2>
+      <ul class="rows plain">
+        <li><span>1st place, Calvanize <span class="sub">Berkeley Haas</span></span><span class="meta">2026</span></li>
+        <li><span>1st place, Most Creative track, B@BHacks 2.0</span><span class="meta">2026</span></li>
+        <li><span>Berkeley Haas StEP</span><span class="meta">2026</span></li>
+        <li><span>Canopy pre-accelerator <span class="sub">Founders, Inc.</span></span><span class="meta">2026</span></li>
+        <li><span>Finalist, Music Tectonics</span><span class="meta">2026</span></li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h"><span class="num" aria-hidden="true">07</span>Contact</h2>
+      <p>The best way to reach me is by email: <a href="mailto:willem_lrs@berkeley.edu">willem_lrs@berkeley.edu</a>.</p>
+      <ul class="links" aria-label="Contact and profiles">
+        <li><a href="mailto:willem_lrs@berkeley.edu">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/willem-lrs/">LinkedIn</a></li>
+        <li><a href="https://github.com/willemlrs">GitHub</a></li>
+        <li><a href="assets/Willem_Larras_CV.pdf">CV <span class="fmt">(PDF)</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© 2026 Willem Larras</p>
+  </footer>
+
+  <nav class="pill" aria-label="Sections">
+    <a href="#about" data-target="about">About</a>
+    <a href="#work" data-target="work">Work</a>
+    <a href="#research" data-target="research">Research</a>
+    <a href="#contact" data-target="contact">Contact</a>
+  </nav>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
